@@ -1399,6 +1399,9 @@ Route::get('erpReports/expenses', 'ErpReportsController@expenses');
 Route::get('erpReports/paymentmethods', 'ErpReportsController@paymentmethods');
 Route::get('erpReports/payments', 'ErpReportsController@payments');
 
+Route::get('erpReports/locations', 'ErpReportsController@locations');
+Route::get('erpReports/stock', 'ErpReportsController@stock');
+
 
 /*
 *#################################################################
@@ -2031,6 +2034,9 @@ Route::resource('paymentmethods', 'PaymentmethodsController');
 
 
 Route::resource('locations', 'LocationsController');
+Route::get('locations/edit/{id}', 'LocationsController@edit');
+Route::get('locations/delete/{id}', 'LocationsController@destroy');
+Route::post('locations/update/{id}', 'LocationsController@update');
 
 
 Route::resource('expenses', 'ExpensesController');

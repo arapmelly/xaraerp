@@ -67,4 +67,35 @@ class ErpReportsController extends \BaseController {
         
     }
 
+
+
+
+    public function locations(){
+
+        $locations = Location::all();
+
+
+        $organization = Organization::find(1);
+
+        $pdf = PDF::loadView('erpreports.locationsReport', compact('locations', 'organization'))->setPaper('a4')->setOrientation('potrait');
+    
+        return $pdf->stream('Stores List.pdf');
+        
+    }
+
+
+
+    public function stock(){
+
+        $items = Item::all();
+
+
+        $organization = Organization::find(1);
+
+        $pdf = PDF::loadView('erpreports.stockReport', compact('items', 'organization'))->setPaper('a4')->setOrientation('potrait');
+    
+        return $pdf->stream('Stock Report.pdf');
+        
+    }
+
 }

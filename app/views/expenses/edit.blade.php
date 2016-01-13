@@ -34,7 +34,7 @@
            <select name="type" class="form-control">
                            <option></option>
                             <option value="Bill"<?= ($expense->type=='Bill')?'selected="selected"':''; ?>>Bill</option>
-                            <option value="Invoice"<?= ($expense->type=='Invoice')?'selected="selected"':''; ?>>Invoice</option>
+                            <option value="Expenditure"<?= ($expense->type=='Expenditure')?'selected="selected"':''; ?>>Expenditure</option>
                         </select>
         </div>
 

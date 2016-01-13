@@ -34,7 +34,7 @@
            <select name="type" class="form-control">
                            <option></option>
                             <option value="Bill"> Bill</option>
-                            <option value="Invoice"> Invoice</option>
+                            <option value="Expenditure"> Expenditure</option>
                         </select>
         </div>
 

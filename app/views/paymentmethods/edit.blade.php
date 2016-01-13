@@ -43,7 +43,7 @@
 
         <div class="form-actions form-group">
         
-          <button type="submit" class="btn btn-primary btn-sm">Update Expense</button>
+          <button type="submit" class="btn btn-primary btn-sm">Update</button>
         </div>
 
     </fieldset>

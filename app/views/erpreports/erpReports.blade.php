@@ -38,7 +38,15 @@
 
        <li>
          <a href="{{ URL::to('erpReports/payments') }}" target="_blank">Payments</a>     
-       </li>  
+       </li>
+
+        <li>
+         <a href="{{ URL::to('erpReports/locations') }}" target="_blank">Stores</a>     
+       </li> 
+
+        <li>
+         <a href="{{ URL::to('erpReports/stock') }}" target="_blank">Stock report </a>     
+       </li> 
 
        <li>
         <a href="reports/blank" target="_blank">Blank report template</a>
